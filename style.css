@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+:root{
+    /* COLORS */
+    --white: rgb(255, 255, 255);
+    --lightGreen: rgb(17, 171, 115);
+    --borderColor: rgb(4, 124, 184);
+    --text: rgb(211, 211, 211);
+
+    /* FONTS  */
+    --lg-sm: 300;
+    --lg-xm: 500;
+    --lg-am: 700;
+
+    /* TRANSITIONS */
+    --HoverTransition: all 0.7s;
+}
+ 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: var(--white);
+
+}
+
+p{
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.section{
+  padding: 7px 20px 17px;
+}
+
+input{
+    border: none;
+    outline: none;
+}
+
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+/* Header */
+header h1{
+    text-align: center;
+    color: var(--lightGreen);
+    font-weight: var(--lg-am);
+    font-size: 2.5rem;
+}
+
+ input{
+    width: 100%;
+    border: 1px solid var(--text);
+    padding: 12px 0;
+    margin: 4px 0;
+    font-size: 15px;
+    border-radius: 5px;
+    transition: var(--HoverTransition);
+    color: var(--text);
+    font-weight: var(--lg-xm);
+    padding-left: 7px;
+} 
+
+ input:hover{
+    border: 1px solid var(--borderColor)
+} 
+
+ .loginDetails{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form label{
+  width: 100%;
+}
+
+.btn{
+    margin-top: 2rem;
+    border-radius: 5px;
+    background: var(--lightGreen);
+    color: var(--white);
+    font-size: 19px;
+    opacity: 0.89;
+    font-weight: var(--lg-sm);
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.btn a{
+    color: var(--white)
+}
+
+.btn:hover{
+    opacity: 3;
+}
+
+.loginDetails-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    float: left;
+    font-size: 13px;
+}
+
+.linkB{
+  margin-right: 2rem;
+}
+
+ .loginDetails-link a{
+    display: block;
+    color: var(--borderColor);
+    font-weight: var(--lg-sm);
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 12px;
+}
+
+ .paragraph-1{
+    margin-bottom: 2rem;
+    padding: 0px 30rem;
+    text-align: center;
+} 
+
+.paragraph-2{
+    margin-top: 2.2rem;
+    font-size: 14px;
+}
+
+.paragraph-3{
+    margin-top: 1rem;
+    padding: 0 19rem;
+    font-size: 14px;
+}
+
+
+/* Sucessful Page */
+.form2{
+  width: 40%;
+}
+
+/* Details Page */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media all and (max-width: 1110px){
+    .paragraph-1 {
+        padding: 0px 21rem;
+      }
+
+      .paragraph-3 {
+        padding: 0 11rem;
+      }
+
+      .form2{
+        width: 50%;
+      }
+}
+
+@media all and (max-width: 936px){
+    .paragraph-1 {
+        padding: 0px 12rem;
+      }
+
+      .paragraph-3 {
+        padding: 0 5rem;
+      }
+
+      .form2{
+        width: 60%;
+      }
+}
+
+@media all and (max-width: 780px){
+  .form2{
+    width: 70%;
+  }
+}
+
+@media all and (max-width: 650px){
+    .paragraph-1 {
+        padding: 0px 6rem;
+      }
+
+      .paragraph-3 {
+        padding: 0 3rem;
+      }
+
+      .form2{
+        width: 80%;
+      }
+}
+
+@media all and (max-width: 460px){
+    .paragraph-1 {
+        padding: 0px 14px;
+      }
+
+      .paragraph-3 {
+        padding: 0 14px;
+      }
+
+      .form2{
+        width: 90%;
+      }
+
+      .linkB{
+        margin-right: 2rem;
+      }
+}
+
+@media all and (max-width: 416px){
+    .paragraph-1 {
+        padding: 0px 3.5rem;
+      }
+
+      .paragraph-3 {
+        padding: 0 10px;
+      }
+
+      .form2{
+        width: 100%;
+      }
+}
+
+@media all and (max-width: 350px){
+  .paragraph-2 {
+    margin-top: 3rem;
+  }
+
+  .paragraph-4 {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .section{
+    padding: 7px 15px 17px;
+  }
+}
+
